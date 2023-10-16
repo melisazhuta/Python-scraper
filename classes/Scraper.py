@@ -61,10 +61,10 @@ class Scraper:
             # print(category)
 
             # image
-            image = soup.css.select('img.img-responsive')
-            image = image[0]['src']
+            # image = soup.css.select('img.img-responsive')
+            # image = image[0]['src']
 
-            # image = soup.select_one('.item img')['src']
+            image = soup.select_one('.item img')['src']
             # print(image)
 
             watch = {'title': title, 'price': price,
